@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Mio CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Database - Auto usate</title>
+</head>
+
+<body>
+    <div class="table_container">
+        <table>
+            <tr>
+                <th>Columns</th>
+                <th>Type</th>
+                <th>Attributes</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>INT</td>
+                <td>NOT NULL, UNIQUE, AUTO_INCREMENT</td>
+            </tr>
+            <tr>
+                <td>marca</td>
+                <td>SMALLINT</td>
+                <td>NOT NULL</td>
+            </tr>
+            <tr>
+                <td>modello</td>
+                <td>SMALLINT</td>
+                <td>NOT NULL</td>
+            </tr>
+            <tr>
+                <td>anno_produzione</td>
+                <td>YEAR</td>
+                <td>NULL</td>
+            </tr>
+            <tr>
+                <td>codice_identificativo</td>
+                <td>CHAR(10)</td>
+                <td>NOT NULL, UNIQUE</td>
+            </tr>
+            <tr>
+                <td>km_percorsi</td>
+                <td>DECIMAL(8,2)</td>
+                <td>NOT NULL</td>
+            </tr>
+            <tr>
+                <td>numero_proprietari</td>
+                <td>TINYINT</td>
+                <td>NULL</td>
+            </tr>
+            <tr>
+                <td>revisionata</td>
+                <td>TINYINT(1)</td>
+                <td>NOT NULL</td>
+            </tr>
+            <tr>
+                <td>prezzo_vendita</td>
+                <td>DECIMAL(11,2)</td>
+                <td>NOT NULL</td>
+            </tr>
+            <tr>
+                <td>prezzo_concessionario</td>
+                <td>DECIMAL(11,2)</td>
+                <td>NULL</td>
+            </tr>
+            <tr>
+                <td>tipologia</td>
+                <td>TINYINT</td>
+                <td>NULL</td>
+            </tr>
+            <tr>
+                <td>pneumatici_ammessi</td>
+                <td>SMALLINT</td>
+                <td>NULL</td>
+            </tr>
+            <tr>
+                <td>condizione_veicolo</td>
+                <td>VARCHAR(50)</td>
+                <td>NOT NULL</td>
+            </tr>
+            <tr>
+                <td>descrizione</td>
+                <td>TEXT</td>
+                <td>NULL</td>
+            </tr>
+            <tr>
+                <td>note</td>
+                <td>VARCHAR(255)</td>
+                <td>NULL</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

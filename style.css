@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.table_container {
+    width: 600px;
+    margin: 50px auto;
+}
+
+.table_container table,
+.table_container th,
+.table_container td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.table_container table {
+    width: 100%;
+}
+
+.table_container th,
+.table_container td {
+    width: calc(100% / 3);
+}
+
+.table_container th {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.table_container td {
+    font-size: 15px;
+    text-align: center;
+}
